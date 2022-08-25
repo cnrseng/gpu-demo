@@ -5,6 +5,6 @@ presubmits:
     containers:
       - image: nvcr.io/nvidia/cuda:11.2.2-devel-ubi8
         command: ["make"]
-    resources:
-      limits:
-        nvidia.com/gpu: 1
+        resources:
+          limits:
+            nvidia.com/gpu: 1
