@@ -6,7 +6,7 @@ postsubmits:
   spec:
     containers:
       - image: nvcr.io/nvidia/cuda:11.2.2-devel-ubi8
-        command: ["./entrypoint"]
+        command: ["./entrypoint.sh"]
     env:
     - name: GPU_BURN_TIME
       value: "120"
