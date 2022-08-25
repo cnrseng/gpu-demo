@@ -1,0 +1,9 @@
+postsubmits:
+- name: test-postsubmit
+  always_run: true
+  branches:
+    - ^main$
+  spec:
+    containers:
+      - image: <CATALOG/IMAGE:TAG>
+        command: <YOUR COMMANDS>

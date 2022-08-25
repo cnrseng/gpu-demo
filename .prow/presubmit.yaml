@@ -1,0 +1,7 @@
+presubmits:
+- name: test-presubmit
+  always_run: true
+  spec:
+    containers:
+      - image: <CATALOG/IMAGE:TAG>
+        command: <YOUR COMMANDS>
